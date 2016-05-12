@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knjiga gostov</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <form method="post" action="/guestbook_poslano">
+        <h3><p>Spoštovani gost!</p></h3>
+    <br>
+        <p>Zahvaljujemo se vam, ker ste izbrali naš hotel.</p>
+        <p>Zelo bomo veseli, če nam boste zaupali svoje vtise o vašem bivanju pri nas.</p>
+        <br>
+    
+        <br>
+    
+        <p>
+            Ime:
+            <input name="ime">
+        </p>
+        
+        <p>
+            Priimek:
+            <input name="priimek">
+        </p>
+        
+        <p>
+            E-naslov:
+            <input name="email" required>
+        </p>
+        
+        
+        <p>
+            Sporočilo:
+            <input name="tekst" required>
+        </p>
+        <br>
+        <br>
+        
+        <p>
+            <button type="submit">Pošlji mnenje</button>
+        </p>
+
+    </form>
+        <p>
+        <a href="/prikazi_vnose">Seznam sporocil</a>
+        </p>
+
+
+</body>
+</html>

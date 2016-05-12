@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Vnos posameznega gosta</title>
+</head>
+<body>
+
+    <h2>Posamezen vnos</h2>
+
+    <p>Ime gosta: {{ sporocilo.ime }}</p>
+    <p>Priimek gosta: {{ sporocilo.priimek }}</p>
+    <p>E-pošta gosta: {{ sporocilo.email }}</p>
+    <p>Sporočilo: {{ sporocilo.tekst }}</p>
+    <p>Ustvarjeno: {{ sporocilo.ustvarjeno }}</p>
+
+
+
+    <p><a href="/sporocilo/{{ sporocilo.key.id() }}/uredi">Uredi sporocilo</a></p>
+    <p><a href="/sporocilo/{{ sporocilo.key.id() }}/izbrisi">Izbrisi sporocilo</a></p>
+    <p><a href="/prikazi_vnose">Vrni se k sporočilom vseh gostov</a></p>
+
+</body>
+</html>

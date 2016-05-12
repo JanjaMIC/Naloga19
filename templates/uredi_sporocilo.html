@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Uredi sporocilo</title>
+</head>
+<body>
+
+<h1>Uredi sporocilo</h1>
+
+        <form method="post" action="/sporocilo/{{ sporocilo.key.id() }}/uredi">
+        <p>Ime:
+            <input name="ime" value="{{ sporocilo.ime }}"/>
+        </p>
+        <p>Sporocilo:
+            <input name="tekst" value="{{ sporocilo.tekst }}"/>
+        </p>
+        <p>
+            <button type="submit">Shrani spremembo</button>
+        </p>
+
+
+    </form>
+
+</body>
+</html>

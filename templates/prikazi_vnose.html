@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Pregled vnosov vseh gostov</title>
+</head>
+<body>
+    <h1>Pregled vnosov vseh gostov</h1>
+
+    {% for sporocilo in vsi_vnosi %}
+        <p>
+            <b>{{ sporocilo.ime }} {{ sporocilo.priimek }} {{sporocilo.email}}:</b> {{ sporocilo.tekst }}
+            <a href="/sporocilo/{{ sporocilo.key.id() }}">Podrobosti sporočila</a>
+            <br>
+        </p>
+
+    {% endfor %}
+        <p><a href="/">Nazaj</a></p>
+
+</body>
+</html>
